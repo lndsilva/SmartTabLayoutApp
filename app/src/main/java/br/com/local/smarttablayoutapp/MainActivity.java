@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         FragmentPagerAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(),
-                FragmentPagerItems.with(this)
+                FragmentPagerItems.with(getApplicationContext())
                         .add("Home", HomeFragment.class)
                         .add("Inscrições", IncricoesFragment.class)
                         .add("Em alta", EmAltaFragment.class)
